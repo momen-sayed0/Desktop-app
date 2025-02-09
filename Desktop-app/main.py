@@ -97,7 +97,7 @@ class MainApp(QWidget, FormClass):
         if verify_user(username, password, role):
             QMessageBox.information(self, "Login Success", f"Welcome Ya {role}😎 !")
             #========== open dashboard==========#
-            self.dashboard = Dashboard()
+            self.dashboard = Dashboard(role)
             self.dashboard.show()
             self.close()  # close login window
         else:
@@ -120,7 +120,7 @@ def main():
     login_window = MainApp()
     login_window.show()
     sys.exit(app.exec_())
-    
+
 #========== run main function==========#
 if __name__ == '__main__':
     main()  

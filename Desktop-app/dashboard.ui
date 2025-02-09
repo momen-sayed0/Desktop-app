@@ -94,7 +94,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="dashborad_btn_2">
+       <widget class="QPushButton" name="dashboard_btn_2">
         <property name="font">
          <font>
           <pointsize>14</pointsize>
@@ -253,7 +253,7 @@
         </font>
        </property>
        <property name="currentIndex">
-        <number>1</number>
+        <number>0</number>
        </property>
        <widget class="QWidget" name="tab_1">
         <attribute name="title">
