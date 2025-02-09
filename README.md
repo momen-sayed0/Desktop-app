@@ -3,7 +3,7 @@
 
 Graduation Project Using:
 
-1- Python library pyqt5 for building desktop application
+1- Python library pyqt5 for building a desktop application
 
 2- AI models for detecting diseases 
 
@@ -12,6 +12,7 @@ Graduation Project Using:
 4- Using SQLite for storing data
 
 ============================================================
+
 Project Features
 
 1- Dashboard separated using roles
