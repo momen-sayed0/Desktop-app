@@ -3,6 +3,7 @@ import os
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.uic import loadUiType
 
+
 FormClass, _ = loadUiType(os.path.join(os.path.dirname(__file__), 'dashboard.ui'))
 
 class Dashboard(QMainWindow, FormClass):
@@ -16,13 +17,23 @@ class Dashboard(QMainWindow, FormClass):
         self.dashboard_btn_2.clicked.connect(lambda: self.stackedWidget.setCurrentIndex(2))
         self.orders_btn_2.clicked.connect(lambda: self.stackedWidget.setCurrentIndex(3))
 
-        self.exit_btn_2.clicked.connect(self.close)
+        self.logout_btn.clicked.connect(self.logout)
 
         self.configure_permissions()
 
     def configure_permissions(self):
         if self.role == "Assistant":
             self.dashboard_btn_2.hide()
+
+    def logout(self):
+
+        self.close() 
+        from main import MainApp
+        self.login_window = MainApp() 
+        self.login_window.show()
+
+
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

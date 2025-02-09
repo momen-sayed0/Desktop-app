@@ -181,7 +181,7 @@
      </spacer>
     </item>
     <item>
-     <widget class="QPushButton" name="exit_btn_2">
+     <widget class="QPushButton" name="logout_btn">
       <property name="font">
        <font>
         <pointsize>14</pointsize>
@@ -433,22 +433,5 @@
   </widget>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>exit_btn_2</sender>
-   <signal>clicked()</signal>
-   <receiver>Form</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>94</x>
-     <y>564</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>246</x>
-     <y>577</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>
